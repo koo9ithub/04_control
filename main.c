@@ -7,6 +7,7 @@ int main(int argc, char *argv[]) {
 	
 	int i;
 	int answer=13;
+	int num=1;
 	
 	do
 	{
@@ -16,16 +17,20 @@ int main(int argc, char *argv[]) {
 		if (i<answer)
 		{
 			printf("low!\n");
+			num++;
 		}
 		else if (i == answer)
 		{
-		    printf("congratulation!\n");	
+		    printf("congratulation!\n");
 		}
 		else
 		{
 			printf("high!\n");
+			num++;
 		}
 	} while (i != answer);
+	
+	printf("the number of trials is: %i\n", num);
 	
 	
 	return 0;
