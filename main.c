@@ -7,7 +7,7 @@ int main(int argc, char *argv[]) {
 	
 	int int1;
 	
-	printf("input a integer: ");
+	printf("input an integer: ");
 	scanf("%d",&int1);
 	
 	if (int1>0)
