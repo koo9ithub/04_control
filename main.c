@@ -5,22 +5,26 @@
 
 int main(int argc, char *argv[]) {
 	
-	int int1;
+	char c;
 	
-	printf("input an integer: ");
-	scanf("%d",&int1);
+	printf("input a letter: ");
+	scanf("%c", &c);
 	
-	if (int1>0)
+	if ('A' <= c && c <= 'Z')
 	{
-	    printf("절 대 값 은 : %d", int1);
+	    printf("대문자");
     }
-    else if (int1 == 0)
+    else if ('a' <= c && c <= 'z')
 	{
-		printf("절 대 값 은 : 0");
+		printf("소문자");
+	}
+	else if ('0' <= c && c <= '9')
+	{
+		printf("숫자");
 	}
 	else
 	{
-	    printf("절 대 값 은 : %d", -int1);
+		printf("기타");
 	}
 	
 	return 0;
