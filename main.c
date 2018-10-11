@@ -12,15 +12,15 @@ int main(int argc, char *argv[]) {
 	
 	if (int1>0)
 	{
-	    printf("positive integer");
+	    printf("절 대 값 은 : %d", int1);
     }
     else if (int1 == 0)
 	{
-		printf("0");
+		printf("절 대 값 은 : 0");
 	}
 	else
 	{
-	    printf("negative integer");
+	    printf("절 대 값 은 : %d", -int1);
 	}
 	
 	return 0;
